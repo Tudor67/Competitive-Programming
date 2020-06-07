@@ -47,8 +47,8 @@ string solve(const vector<string>& a, const int& m){
     }
 
     long long size = (1LL << m);
-    long long median = size / 2 - 2 * int(v.size());
-    for(; median <= size / 2 + 2 * v.size(); ++median){
+    long long median = size / 2 - int(v.size() / 2 + 1);
+    for(; median <= size / 2 + v.size() / 2 + 1; ++median){
         if(valid(median, size, v)){
             break;
         }
