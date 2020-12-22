@@ -1,13 +1,12 @@
 class Solution {
 private:
-    vector<vector<int>> AUX;
-    
     void mult(const vector<vector<int>>& A, const vector<vector<int>>& B, vector<vector<int>>& C){
+        static vector<vector<int>> AUX = {{0, 0}, {0, 0}};
         for(int i = 0; i < AUX.size(); ++i){
             for(int j = 0; j < AUX[0].size(); ++j){
                 AUX[i][j] = 0;
                 for(int k = 0; k < AUX[0].size(); ++k){
-                    AUX[i][j] += A[i][k] * B[j][k];
+                    AUX[i][j] += A[i][k] * B[k][j];
                 }
             }
         }
@@ -15,7 +14,6 @@ private:
     }
     
     void binary_exponentiation(vector<vector<int>>& A, int n, vector<vector<int>>& P){
-        AUX = {{0, 0}, {0, 0}};
         P = {{1, 0}, {0, 1}};
         while(n > 0){
             if(n & 1){
