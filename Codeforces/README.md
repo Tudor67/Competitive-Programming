@@ -7,6 +7,7 @@ Profile: [Tudor67](https://codeforces.com/profile/Tudor67)
 ## Binary Search
 - lower_bound: [1295C](https://codeforces.com/contest/1295/submission/69902528)
 - lower_bound and upper_bound with custom compare function: [1462F](https://codeforces.com/contest/1462/submission/103658260)
+- interactive binary search of any local minimum of array: [1480C](https://codeforces.com/contest/1480/submission/106910465)
 
 ## Binary Indexed Tree
 - sum version + template + value compression before insertion in the tree: [1311F](https://codeforces.com/contest/1311/submission/71885914)
@@ -25,5 +26,8 @@ Profile: [Tudor67](https://codeforces.com/profile/Tudor67)
 - [Modular multiplicative inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse): [1420D](https://codeforces.com/contest/1420/submission/94153944) | [1462E2](https://codeforces.com/contest/1462/submission/102993495)
 - Dominos + chessboard coloring: [1269D](https://codeforces.com/contest/1269/submission/67672026)
 
+## Greedy
+- Greedy with look-ahead, [Bélády's algorithm or farthest-in-the-future cache/page replacement policy](https://en.wikipedia.org/wiki/Cache_replacement_policies#B%C3%A9l%C3%A1dy's_algorithm): [1480D2](https://codeforces.com/contest/1480/submission/107011500) | [1480D2](https://codeforces.com/contest/1480/submission/107008745)
+
 ## Interactive Problems
-- [1375F](https://codeforces.com/contest/1375/submission/86203138)
+- [1375F](https://codeforces.com/contest/1375/submission/86203138) | [1480C](https://codeforces.com/contest/1480/submission/106910465)
