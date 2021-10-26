@@ -38,3 +38,7 @@ Profile: [Tudor67](https://codeforces.com/profile/Tudor67)
 
 ## Interactive Problems
 - [1375F](https://codeforces.com/contest/1375/submission/86203138) | [1480C](https://codeforces.com/contest/1480/submission/106910465) | [1486C1](https://codeforces.com/contest/1486/submission/107887797) | [1486C2](https://codeforces.com/contest/1486/submission/107890283)
+
+## Strings
+- [Z Algorithm](https://cp-algorithms.com/string/z-function.html): [126B](http://codeforces.com/contest/126/submission/132474027) | [432D](https://codeforces.com/contest/432/submission/133195157)
+- [KMP](https://cp-algorithms.com/string/prefix-function.html): [126B](http://codeforces.com/contest/126/submission/132475555) | [432D](https://codeforces.com/contest/432/submission/133195173)
