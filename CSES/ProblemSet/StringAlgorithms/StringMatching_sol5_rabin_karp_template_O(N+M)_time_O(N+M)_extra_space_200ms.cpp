@@ -17,14 +17,13 @@ private:
 
 public:
     RollingHash(const string& S, const long long& BASE, const long long& MODULO): MODULO(MODULO){
-        const char MIN_ELEM = *min_element(S.begin(), S.end());
         const int N = S.length();
         h.resize(N);
         p.resize(N);
-        h[0] = S[0] - MIN_ELEM + 1;
+        h[0] = S[0] - 'a' + 1;
         p[0] = 1;
         for(int i = 1; i < N; ++i){
-            h[i] = h[i - 1] * BASE + (S[i] - MIN_ELEM + 1);
+            h[i] = h[i - 1] * BASE + (S[i] - 'a' + 1);
             mod(h[i]);
             p[i] = p[i - 1] * BASE;
             mod(p[i]);
