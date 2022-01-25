@@ -23,6 +23,12 @@ __*Unusual binary search problems*__
 * [658. Find K Closest Elements (binary search, sliding window, heap, two pointers)](https://leetcode.com/problems/find-k-closest-elements/)
 * [2071. Maximum Number of Tasks You Can Assign (binary search the answer, difficult greedy check function isValid)](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/)
 * [1923. Longest Common Subpath (binary search the answer, suffix array + lcp with kasai's algorithm, rolling hash)](https://leetcode.com/problems/longest-common-subpath/)
+* [2141. Maximum Running Time of N Computers (binary search the answer)](https://leetcode.com/problems/maximum-running-time-of-n-computers/)
+
+### Sliding Window
+* [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/)
+  * [Leetcode submission (sliding window)](https://leetcode.com/submissions/detail/622778174/)
+  * [Leetcode submission (binary search)](https://leetcode.com/submissions/detail/622762745/)
 
 ### Strings
 __*Lexicographically minimal string rotation*__
@@ -52,6 +58,10 @@ __*Merge Sort Tree*__
   * [Implementation with vector\<vector\<int\>\>](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#2080_RangeFrequencyQueries_sol4_merge_sort_tree_1741ms_382MB.cpp)
   * [Implementation with vector\<int\> and start indices](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#2080_RangeFrequencyQueries_sol5_merge_sort_tree_1672ms_285MB.cpp)
 
+__*Dynamic Segment Tree*__
+* [1348. Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/)
+  * [Leetcode submission](https://leetcode.com/submissions/detail/624748522/)
+  
 __*Monotonic Stack*__
 * [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
   * [PrevSmaller and NextSmaller in O(N)](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#84_LargestRectangleInHistogram_sol4_monostack_O(N)_time_O(N)_extra_space_20ms_15.1MB.cpp)
@@ -65,7 +75,25 @@ __*SQRT decomposition*__
 __*Coordinate compression*__
 * [699. Falling Squares (coordinate compression, segment tree with lazy propagation)](https://leetcode.com/problems/falling-squares/)
 * [850. Rectangle Area II (line sweep, coordinate compression, segment tree)](https://leetcode.com/problems/rectangle-area-ii/)
+* [1964. Find the Longest Valid Obstacle Course at Each Position (coordinate compression, segment tree)](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/)
+  * [Leetcode submission](https://leetcode.com/submissions/detail/621830593/)
 
+__*Sparse Table*__
+* [1483. Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/)
+  * [Leetcode submission](https://leetcode.com/submissions/detail/620427452/)
+
+### Subsequences
+__*Longest Increasing Subsequence*__
+* [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+* [1964. Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/)
+  * [Leetcode submission (binary search implementation)](https://leetcode.com/submissions/detail/621849479/)
+* [2111. Minimum Operations to Make the Array K-Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/)
+  * [Leetcode submission (binary search implementation)](https://leetcode.com/submissions/detail/622602059/)
+* [1713. Minimum Operations to Make a Subsequence](https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/)
+  * [Leetcode submission (segment tree)](https://leetcode.com/submissions/detail/623335835/)
+  * [Leetcode submission (binary search)](https://leetcode.com/submissions/detail/623340907/)
+  * [Leetcode submission (binary search)](https://leetcode.com/submissions/detail/623352595/)
+  
 ### DP
 __*Dominos & Covering/Tiling & DP*__
 * [790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/)
@@ -172,8 +200,9 @@ The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 
 * [978. Longest Turbulent Subarray (sliding window, two pointers, dp)]()
 * [2002. Maximum Product of the Length of Two Palindromic Subsequences (bit manipulation, submask enumeration, dp, O(4^N) -> O(3^N) -> O(2^N))]()
 * [75. Sort Colors (count sort, two pointers, shift trick)]()
-* [1923. Longest Common Subpath (binary search the answer, rolling hash, suffix array + lcp with kasai's algorithm, sliding window, monodeque)]()
-* [973. K Closest Points to Origin (sort, nth_element, heap, randomized quick select, binary search)]()
+* [1923. Longest Common Subpath (binary search the answer, rolling hash, suffix array + lcp with kasai's algorithm, sliding window, monodeque)](https://leetcode.com/problems/longest-common-subpath/)
+* [973. K Closest Points to Origin (sort, nth_element, heap, randomized quick select, binary search)](https://leetcode.com/problems/k-closest-points-to-origin/)
+* [1508. Range Sum of Sorted Subarray Sums (sort, nth_element, min heap, counter, binary search + sliding window)](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)
 
 ## Very difficult problems
 * [1659. Maximize Grid Happiness]()
