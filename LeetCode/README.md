@@ -18,6 +18,13 @@ Profile: [Tudor67](https://leetcode.com/tudor67/)
   - [980. Unique Paths III](https://leetcode.com/problems/unique-paths-iii/): [\[C++\] O(RC * 2^(RC)) Top-Down DP (Memoization)](https://leetcode.com/problems/unique-paths-iii/discuss/1555177/c-orc-2rc-top-down-dp-memoization)
 
 ## Notes
+### Sorting
+* [912. Sort an Array](https://leetcode.com/problems/sort-an-array/)
+  * [LeetCode submission (heap sort)](https://leetcode.com/submissions/detail/732469924/)
+  * [LeetCode submission (merge sort)](https://leetcode.com/submissions/detail/732480232/)
+  * [LeetCode submission (quick sort with randomized pivot)](https://leetcode.com/submissions/detail/732493419/)
+  * [LeetCode submission (count sort)](https://leetcode.com/submissions/detail/732498605/)
+  
 ### Binary Search
 __*Unusual binary search problems*__
 * [658. Find K Closest Elements (binary search, sliding window, heap, two pointers)](https://leetcode.com/problems/find-k-closest-elements/)
@@ -29,6 +36,16 @@ __*Unusual binary search problems*__
 * [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/)
   * [Leetcode submission (sliding window)](https://leetcode.com/submissions/detail/622778174/)
   * [Leetcode submission (binary search)](https://leetcode.com/submissions/detail/622762745/)
+  
+### Heaps
+* [1834. Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/)
+  * [Heap with lambda comparator]()
+  * [Heap with struct comparator]()
+  
+* [1424. Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/)
+  * [Heap with lambda comparator]()
+  * [Heap with struct comparator]()
+  * [Heap with compare method]()
 
 ### Strings
 __*Lexicographically minimal string rotation*__
@@ -57,7 +74,8 @@ __*Merge Sort Tree*__
 * [2080. Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/)
   * [Implementation with vector\<vector\<int\>\>](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#2080_RangeFrequencyQueries_sol4_merge_sort_tree_1741ms_382MB.cpp)
   * [Implementation with vector\<int\> and start indices](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#2080_RangeFrequencyQueries_sol5_merge_sort_tree_1672ms_285MB.cpp)
-
+* [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
+  
 __*Dynamic Segment Tree*__
 * [1348. Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/)
   * [Leetcode submission](https://leetcode.com/submissions/detail/624748522/)
@@ -124,6 +142,16 @@ __*Topological Sort*__
 * [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
   * [Topological sort with queue](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#210_CourseScheduleII_sol7_topological_sort_with_queue_O(V+E)_time_O(V+E)_extra_space_16ms_13.3MB.cpp)
   * [Topological sort with dfs](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#210_CourseScheduleII_sol8_topological_sort_with_dfs_O(V+E)_time_O(V+E)_extra_space_20ms_14.2MB.cpp)
+
+__*Minimum Spanning Tree*__
+* [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
+  * [Kruskal's Algorithm](https://leetcode.com/submissions/detail/687818535/)
+  * [Prim's Algorithm](https://leetcode.com/submissions/detail/687817611/)
+  * [Prim's Algorithm for dense graphs](https://leetcode.com/submissions/detail/687828313/)
+  
+__*0-1 BFS (Dijkstra's algorithm in a binary weight graph)*__
+* [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)
+* [2290. Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)
 
 ### Math
 __*Combinations with repetition*__
@@ -203,6 +231,7 @@ The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 
 * [1923. Longest Common Subpath (binary search the answer, rolling hash, suffix array + lcp with kasai's algorithm, sliding window, monodeque)](https://leetcode.com/problems/longest-common-subpath/)
 * [973. K Closest Points to Origin (sort, nth_element, heap, randomized quick select, binary search)](https://leetcode.com/problems/k-closest-points-to-origin/)
 * [1508. Range Sum of Sorted Subarray Sums (sort, nth_element, min heap, counter, binary search + sliding window)](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)
+* [84. Largest Rectangle in Histogram (monostack, segment tree, binary search, divide and conquer)](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 ## Very difficult problems
 * [1659. Maximize Grid Happiness]()
@@ -230,6 +259,7 @@ The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 
 * [1977. Number of Ways to Separate Numbers (dp, suffix array, lcp, smart <= compare of two substrings)]()
 
 ## Nice people on LeetCode
+* https://leetcode.com/lzl124631x/
 * https://leetcode.com/DBabichev/
 * https://leetcode.com/rowe1227/
 * https://leetcode.com/lee215/
