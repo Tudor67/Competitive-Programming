@@ -1,0 +1,80 @@
+class MaxHeap{
+private:
+    vector<int> v;
+    
+    int getParent(int node){
+        return (node - 1) / 2;
+    }
+    
+    int getLeftChild(int node){
+        return 2 * node + 1;
+    }
+    
+    int getRightChild(int node){
+        return 2 * node + 2;
+    }
+    
+    void heapDown(int node){
+        int size = v.size();
+        while(getLeftChild(node) < size){
+            int leftChild = getLeftChild(node);
+            int rightChild = getRightChild(node);
+            if(rightChild < size && v[leftChild] < v[rightChild] && v[node] < v[rightChild]){
+                swap(v[node], v[rightChild]);
+                node = rightChild;
+            }else if(v[node] < v[leftChild]){
+                swap(v[node], v[leftChild]);
+                node = leftChild;
+            }else{
+                break;
+            }
+        }
+    }
+    
+    void heapUp(int node){
+        while(node > 0 && v[getParent(node)] < v[node]){
+            swap(v[getParent(node)], v[node]);
+            node = getParent(node);
+        }
+    }
+    
+public:
+    MaxHeap(){
+        
+    }
+    
+    int top(){
+        return v[0];
+    }
+    
+    void push(int val){
+        v.push_back(val);
+        heapUp((int)v.size() - 1);
+    }
+    
+    void pop(){
+        v[0] = v.back();
+        v.pop_back();
+        heapDown(0);
+    }
+};
+
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        const int N = nums.size();
+        
+        MaxHeap maxHeap;
+        for(int num: nums){
+            maxHeap.push(num);
+        }
+        
+        vector<int> sortedArray(N);
+        for(int i = N - 1; i >= 0; --i){
+            sortedArray[i] = maxHeap.top();
+            maxHeap.pop();
+        }
+        
+        return sortedArray;
+    }
+};
