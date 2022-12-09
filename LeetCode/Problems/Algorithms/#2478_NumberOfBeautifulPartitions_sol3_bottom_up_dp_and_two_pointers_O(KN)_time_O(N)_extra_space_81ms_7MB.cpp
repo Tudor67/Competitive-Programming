@@ -1,0 +1,50 @@
+class Solution {
+private:
+    bool isPrime(char c){
+        return (c == '2' || c == '3' || c == '5' || c == '7');
+    }
+
+public:
+    int beautifulPartitions(string s, int k, int minLength) {
+        const int N = s.length();
+        const int MODULO = 1e9 + 7;
+
+        // Special case
+        if(k * minLength > N || !isPrime(s[0]) || isPrime(s[N - 1])){
+            return 0;
+        }
+
+        // DP
+        // At jth iteration:
+        //    prevDP[i]: number of ways to partition s[0 .. i] in (j - 1) valid parts
+        //    dp[i]: number of ways to partition s[0 .. i] in j valid parts
+        vector<int> prevDP(N);
+        vector<int> dp(N);
+        for(int i = minLength - 1; i < N; ++i){
+            if(isPrime(s[0]) && !isPrime(s[i])){
+                dp[i] = 1;
+            }
+        }
+
+        for(int j = 2; j <= k; ++j){
+            copy(dp.begin(), dp.end(), prevDP.begin());
+            fill(dp.begin(), dp.end(), 0);
+
+            int pos = 0;
+            int prefSumPrevDP = 0;
+            for(int i = 1; i < N; ++i){
+                if(!isPrime(s[i])){
+                    while(pos + 1 + minLength - 1 <= i){
+                        pos += 1;
+                        if(!isPrime(s[pos - 1]) && isPrime(s[pos])){
+                            prefSumPrevDP = (prefSumPrevDP + prevDP[pos - 1]) % MODULO;
+                        }
+                    }
+                    dp[i] = prefSumPrevDP;
+                }
+            }
+        }
+
+        return dp[N - 1];
+    }
+};
