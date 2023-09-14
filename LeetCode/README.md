@@ -17,6 +17,9 @@ Profile: [Tudor67](https://leetcode.com/tudor67/)
 * Top-down dp
   - [980. Unique Paths III](https://leetcode.com/problems/unique-paths-iii/): [\[C++\] O(RC * 2^(RC)) Top-Down DP (Memoization)](https://leetcode.com/problems/unique-paths-iii/discuss/1555177/c-orc-2rc-top-down-dp-memoization)
 
+* Analysis
+  - [2589. Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/): [Small Test Case for Wrong Greedy Approach](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/solutions/3454369/small-test-case-for-wrong-greedy-approach/)
+
 ## Notes
 ### Sorting
 * [912. Sort an Array](https://leetcode.com/problems/sort-an-array/)
@@ -24,6 +27,10 @@ Profile: [Tudor67](https://leetcode.com/tudor67/)
   * [LeetCode submission (merge sort)](https://leetcode.com/submissions/detail/732480232/)
   * [LeetCode submission (quick sort with randomized pivot)](https://leetcode.com/submissions/detail/732493419/)
   * [LeetCode submission (count sort)](https://leetcode.com/submissions/detail/732498605/)
+  
+### Kth Order Statistic (nth_element)
+* [324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)
+  * [LeetCode submission](https://leetcode.com/submissions/detail/771104059/)
   
 ### Binary Search
 __*Unusual binary search problems*__
@@ -68,6 +75,10 @@ __*Trie*__
 __*Aho-Corasick*__
 * [1032. Stream of Characters](https://leetcode.com/problems/stream-of-characters/):
   * [Leetcode submission](https://leetcode.com/submissions/detail/597320684/)
+  
+__*Manacher's Algorithm*__
+* [2472. Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/description/)
+  * [Leetcode submission](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/submissions/855743355/)
 
 ### Range Queries
 __*Merge Sort Tree*__
@@ -75,10 +86,20 @@ __*Merge Sort Tree*__
   * [Implementation with vector\<vector\<int\>\>](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#2080_RangeFrequencyQueries_sol4_merge_sort_tree_1741ms_382MB.cpp)
   * [Implementation with vector\<int\> and start indices](https://github.com/Tudor67/Competitive-Programming/tree/master/LeetCode/Problems/Algorithms#2080_RangeFrequencyQueries_sol5_merge_sort_tree_1672ms_285MB.cpp)
 * [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
+* [2250. Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/)
+  * [Leetcode submission, TLE, Implementation with vector\<vector\<int\>\>](https://leetcode.com/submissions/detail/760001627/)
   
 __*Dynamic Segment Tree*__
 * [1348. Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/)
   * [Leetcode submission](https://leetcode.com/submissions/detail/624748522/)
+  
+__*Segment Tree with Lazy Propagation*__
+* [218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)
+  * [Leetcode submission, Maximize Range, lazy vector and tree vector](https://leetcode.com/submissions/detail/813783931/)
+  
+__*Special Segment Tree to Maximize a Range*__
+* [218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)
+  * [Leetcode submission, Maximize Range, only lazy vector](https://leetcode.com/submissions/detail/814180774/)
   
 __*Monotonic Stack*__
 * [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
@@ -88,6 +109,7 @@ __*Monotonic Stack*__
 
 __*SQRT decomposition*__
 * [307. Range Sum Query - Mutable (standard sqrt decomposition with updates on single elements, not ranges)](https://leetcode.com/problems/range-sum-query-mutable/)
+  * [Leetcode submission](https://leetcode.com/submissions/detail/761489724/)
 * [699. Falling Squares (sqrt decomposition with updates on ranges)](https://leetcode.com/problems/falling-squares/)
 
 __*Coordinate compression*__
@@ -153,6 +175,18 @@ __*0-1 BFS (Dijkstra's algorithm in a binary weight graph)*__
 * [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)
 * [2290. Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)
 
+__*Eulerian Path (Hierholzer's Algorithm)*__
+* [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
+  * [Recursive DFS + STL list](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23332_ReconstructItinerary_sol4_eulerian_path_with_recursive_dfs_and_stl_list_O(LxTlogT)_time_O(LxT)_extra_space_17ms_15MB.cpp)
+  * [Iterative DFS + STL list](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23332_ReconstructItinerary_sol5_eulerian_path_with_iterative_dfs_and_stl_list_O(LxTlogT)_time_O(LxT)_extra_space_24ms_15MB.cpp)
+  * [Recursive DFS](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23332_ReconstructItinerary_sol6_eulerian_path_with_recursive_dfs_O(LxTlogT)_time_O(LxT)_extra_space_21ms_15MB.cpp)
+  * [Iterative DFS](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23332_ReconstructItinerary_sol7_eulerian_path_with_iterative_dfs_O(LxTlogT)_time_O(LxT)_extra_space_26ms_15MB.cpp)
+
+### Trees
+__*Morris Inorder Traversal*__
+* [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+  * [Leetcode submission](https://leetcode.com/submissions/detail/771007420/)
+
 ### Math
 __*Combinations with repetition*__
 * [1641. Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)
@@ -195,6 +229,11 @@ The mth prime prime number pm ~ mlog(m)
 The sum of the first M primes: p1 + p2 + p3 + ... + pM ~ (1/2) * M^2 * ln(M)
 The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 * (1/ln(N)), where pk <= N
 
+### Geometry
+__*Check intersection of two segments (handle collinearity)*__
+* [335. Self Crossing](https://leetcode.com/problems/self-crossing/)
+  * [LeetCode submission](https://leetcode.com/submissions/detail/773672945/)
+
 ### Nice implementation problems
 * [715. Range Module (ranges, segments, intersection + merge + split operations)](https://leetcode.com/problems/range-module/)
 * [2056. Number of Valid Move Combinations On Chessboard (implementation + simulation + backtracking, difficult to digest the problem statement)](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/)
@@ -232,6 +271,7 @@ The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 
 * [973. K Closest Points to Origin (sort, nth_element, heap, randomized quick select, binary search)](https://leetcode.com/problems/k-closest-points-to-origin/)
 * [1508. Range Sum of Sorted Subarray Sums (sort, nth_element, min heap, counter, binary search + sliding window)](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)
 * [84. Largest Rectangle in Histogram (monostack, segment tree, binary search, divide and conquer)](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+* [135. Candy (greedy, sort, count sort, topological sort, left to right and right to left iterations)](https://leetcode.com/problems/candy/)
 
 ## Very difficult problems
 * [1659. Maximize Grid Happiness]()
@@ -241,6 +281,7 @@ The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 
 * [1787. Make the XOR of All Segments Equal to Zero (dp, bit manipulation, property of xor for sliding window)]()
 * [1815. Maximum Number of Groups Getting Fresh Donuts (greedy + dp, memoization, bit manipulation)]()
 * [1397. Find All Good Strings (string matching, dp on digits)]()
+* [1531. String Compression II (dp)](https://leetcode.com/problems/string-compression-ii/)
 
 ## Nice problems
 * [910. Smallest Range II (prefix-suffix trick)]()
@@ -259,6 +300,7 @@ The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 
 * [1977. Number of Ways to Separate Numbers (dp, suffix array, lcp, smart <= compare of two substrings)]()
 
 ## Nice people on LeetCode
+* https://leetcode.com/Bakerston/
 * https://leetcode.com/lzl124631x/
 * https://leetcode.com/DBabichev/
 * https://leetcode.com/rowe1227/
