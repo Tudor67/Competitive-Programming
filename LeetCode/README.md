@@ -88,11 +88,15 @@ __*Merge Sort Tree*__
 * [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
 * [2250. Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/)
   * [Leetcode submission, TLE, Implementation with vector\<vector\<int\>\>](https://leetcode.com/submissions/detail/760001627/)
-  
+
+__*2D Queries*__
+  * [2736. Maximum Sum Queries](https://leetcode.com/problems/maximum-sum-queries/)
+    * [Implementation with Sweep Line + Segment Tree](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%232736_MaximumSumQueries_sol1_sweep_line_and_segment_tree_O(NlogN%2BQlogQ%2BQlogN)_time_O(N%2BQ)_extra_space_389ms_188MB.cpp)
+
 __*Dynamic Segment Tree*__
 * [1348. Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/)
   * [Leetcode submission](https://leetcode.com/submissions/detail/624748522/)
-  
+
 __*Segment Tree with Lazy Propagation*__
 * [218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)
   * [Leetcode submission, Maximize Range, lazy vector and tree vector](https://leetcode.com/submissions/detail/813783931/)
@@ -111,6 +115,10 @@ __*SQRT decomposition*__
 * [307. Range Sum Query - Mutable (standard sqrt decomposition with updates on single elements, not ranges)](https://leetcode.com/problems/range-sum-query-mutable/)
   * [Leetcode submission](https://leetcode.com/submissions/detail/761489724/)
 * [699. Falling Squares (sqrt decomposition with updates on ranges)](https://leetcode.com/problems/falling-squares/)
+
+__*Mo's Algorithm*__
+* [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/)
+  * [Leetcode submission](https://leetcode.com/problems/arithmetic-subarrays/submissions/1105619572/)
 
 __*Coordinate compression*__
 * [699. Falling Squares (coordinate compression, segment tree with lazy propagation)](https://leetcode.com/problems/falling-squares/)
@@ -142,6 +150,8 @@ __*Digits, Counting numbers less than something*__
 * [600. Non-negative Integers without Consecutive Ones (dp on digits, fibonacci, bit manipulation)](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/)
 * [1803. Count Pairs With XOR in a Range (bit manipulation, prefix counts, trie)](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/)
 * [1397. Find All Good Strings (string matching, dp on digits)](https://leetcode.com/problems/find-all-good-strings/)
+* [2719. Count of Integers](https://leetcode.com/problems/count-of-integers/)
+  * [Leetcode submission](https://leetcode.com/problems/count-of-integers/submissions/1115270373/)
 
 __*Nice DP problems*__
 * [1463. Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/)
@@ -186,6 +196,10 @@ __*Eulerian Path (Hierholzer's Algorithm)*__
 __*Morris Inorder Traversal*__
 * [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
   * [Leetcode submission](https://leetcode.com/submissions/detail/771007420/)
+
+__*Iterative Postorder Traversal*__
+* [2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
+  * [Leetcode submission](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/submissions/1090094868/)
 
 ### Math
 __*Combinations with repetition*__
@@ -329,3 +343,9 @@ __*Check intersection of two segments (handle collinearity)*__
    - Time complexity of recursive approach
 * [95. Unique Binary Search Trees II]()
    - Time and space complexity (sum of catalan numbers? for space, should we multiply with n = number of nodes in a tree?)
+
+## Bugs, Warnings and implementation problems
+__*Warning (11-Dec-2023) for my old implementations of: Segment Tree with Lazy Propagation*__
+  * Possible bug in implementation of `propagate(node)`:
+    * `if(2 * node < (int)lazy.size())` and `if(2 * node < (int)tree.size())` are bad;
+	* use `if(l != r)` instead (to check if the current node is a leaf, l and r represent the limits of the current range).
