@@ -55,6 +55,14 @@ __*Unusual binary search problems*__
   * [Heap with compare method]()
 
 ### Strings
+__*Palindromes*__
+* [2967. Minimum Cost to Make Array Equalindromic](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/description/)
+  * [Sort + Prefix Sum + Generate All Palindromes](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/submissions/1287475163/)
+  * [Sort + Median Palindrome](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/submissions/1334534162/)
+* [564. Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/description/)
+  * [Strings](https://leetcode.com/problems/find-the-closest-palindrome/submissions/1366827900/)
+  * [Binary Search](https://leetcode.com/problems/find-the-closest-palindrome/submissions/1367140057/)
+
 __*Lexicographically minimal string rotation*__
 * [899. Orderly Queue](https://leetcode.com/problems/orderly-queue/)
   * [O(NlogN) time, O(N) extra-space: Binary search + hashes + modular multiplicative inverse](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23899_OrderlyQueue_sol4_binary_search_and_hashing_O(NlogN)_time_O(N)_extra_space.cpp)
@@ -141,6 +149,14 @@ __*Longest Increasing Subsequence*__
   * [Leetcode submission (segment tree)](https://leetcode.com/submissions/detail/623335835/)
   * [Leetcode submission (binary search)](https://leetcode.com/submissions/detail/623340907/)
   * [Leetcode submission (binary search)](https://leetcode.com/submissions/detail/623352595/)
+
+### Greedy
+__*Select most frequent elements*__
+* [1753. Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/)
+  * [Sort frequencies](https://leetcode.com/problems/maximum-score-from-removing-stones/submissions/716809022/)
+* [2856. Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
+  * [Max Heap, O(NlogN)](https://leetcode.com/problems/minimum-array-length-after-pair-removals/submissions/1192983137/)
+  * [Find most frequent element, O(N)](https://leetcode.com/problems/minimum-array-length-after-pair-removals/submissions/1193012678/)
   
 ### DP
 __*Dominos & Covering/Tiling & DP*__
@@ -152,6 +168,12 @@ __*Digits, Counting numbers less than something*__
 * [1397. Find All Good Strings (string matching, dp on digits)](https://leetcode.com/problems/find-all-good-strings/)
 * [2719. Count of Integers](https://leetcode.com/problems/count-of-integers/)
   * [Leetcode submission](https://leetcode.com/problems/count-of-integers/submissions/1115270373/)
+* [2999. Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/)
+  * [Leetcode submission](https://leetcode.com/problems/count-the-number-of-powerful-integers/submissions/1376980357/)
+* [2801. Count Stepping Numbers in Range](https://leetcode.com/problems/count-stepping-numbers-in-range/)
+  * [LeetCode submission](https://leetcode.com/problems/count-stepping-numbers-in-range/submissions/1161446979/)
+* [2827. Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/)
+  * [LeetCode submission](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/submissions/1175478521/)
 
 __*Nice DP problems*__
 * [1463. Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/)
@@ -184,6 +206,7 @@ __*Minimum Spanning Tree*__
 __*0-1 BFS (Dijkstra's algorithm in a binary weight graph)*__
 * [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)
 * [2290. Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)
+* [2812. Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/)
 
 __*Eulerian Path (Hierholzer's Algorithm)*__
 * [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
@@ -200,8 +223,54 @@ __*Morris Inorder Traversal*__
 __*Iterative Postorder Traversal*__
 * [2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
   * [Leetcode submission](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/submissions/1090094868/)
+* [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
+  * [Leetcode submission](https://leetcode.com/problems/diameter-of-binary-tree/submissions/1187974625/)
+* [1325. Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/description/)
+  * [Leetcode submission](https://leetcode.com/problems/delete-leaves-with-a-given-value/submissions/1260607155/)
+* [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
+  * [Iterative Postorder Traversal with `addLeftPath(..)`](https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/1368216520/)
+  * [Iterative Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/1369236407/)
+  * [Morris Reversed Preorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/1368236086/)
+* [590. N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/)
+  * [Iterative Reversed Preorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/submissions/1369119590/)
+  * [Iterative Postorder Traversal with `addLeftPath(..)`](https://leetcode.com/problems/n-ary-tree-postorder-traversal/submissions/1369164749/)
+  * [Iterative Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/submissions/1369206795/)
 
+__*LCA*__
+* [2846. Minimum Edge Weight Equilibrium Queries in a Tree](https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/description/)
+  * [Counter + LCA + Euler Tour + Segment Tree](https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/submissions/1188074810/)
+  * [Counter + LCA + Binary Lifting + Sparse Table](https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/submissions/1188103242/)
+  * [Counter + LCA + Tarjan's Offline Algorithm + DSU](https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/submissions/1188149919/)
+  
+__*Nice Tree Problems*__
+* [2791. Count Paths That Can Form a Palindrome in a Tree](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/)
+  * [LeetCode submission](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/submissions/1161300986/)
+  
+__*Re-rooting*__
+* [2858. Minimum Edge Reversals So Every Node Is Reachable](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/)
+  * [Re-Rooting with DFS](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/submissions/1194022663/)
+  * [Re-Rooting with BFS](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/submissions/1194040359/)
+* [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
+  * [Re-Rooting](https://leetcode.com/problems/minimum-height-trees/submissions/1240227399/)
+* [834. Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/)
+  * [Re-Rooting](https://leetcode.com/problems/sum-of-distances-in-tree/submissions/1244452654/)
+  
+### Nice implementation problems
+* [715. Range Module (ranges, segments, intersection + merge + split operations)](https://leetcode.com/problems/range-module/)
+* [2056. Number of Valid Move Combinations On Chessboard (implementation + simulation + backtracking, difficult to digest the problem statement)](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/)
+
+### Geometry
+__*Check intersection of two segments (handle collinearity)*__
+* [335. Self Crossing](https://leetcode.com/problems/self-crossing/)
+  * [LeetCode submission](https://leetcode.com/submissions/detail/773672945/)
+  
 ### Math
+__*Inclusion-Exclusion Principle*__
+* [2929. Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii/description/)
+  * [Leetcode submission](https://leetcode.com/problems/distribute-candies-among-children-ii/submissions/1224312563/)
+* [2930. Number of Strings Which Can Be Rearranged to Contain Substring](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/description/)
+  * [Leetcode submission](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/submissions/1227043176/)
+
 __*Combinations with repetition*__
 * [1641. Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)
 
@@ -242,92 +311,6 @@ The mth prime prime number pm ~ mlog(m)
 [Prime Sums](https://mathworld.wolfram.com/PrimeSums.html):
 The sum of the first M primes: p1 + p2 + p3 + ... + pM ~ (1/2) * M^2 * ln(M)
 The sum of the primes less or equal to N: p1 + p2 + p3 + ... + pk ~ (1/2) * N^2 * (1/ln(N)), where pk <= N
-
-### Geometry
-__*Check intersection of two segments (handle collinearity)*__
-* [335. Self Crossing](https://leetcode.com/problems/self-crossing/)
-  * [LeetCode submission](https://leetcode.com/submissions/detail/773672945/)
-
-### Nice implementation problems
-* [715. Range Module (ranges, segments, intersection + merge + split operations)](https://leetcode.com/problems/range-module/)
-* [2056. Number of Valid Move Combinations On Chessboard (implementation + simulation + backtracking, difficult to digest the problem statement)](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/)
-
-## Problems with many solutions
-* [1658. Minimum Operations to Reduce X to Zero]()
-* [1723. Find Minimum Time to Finish All Jobs]()
-* [1655. Distribute Repeating Integers]()
-* [1631. Path With Minimum Effort (binary search the answer, dsu, dijkstra)]()
-* [1675. Minimize Deviation in Array (sliding window, max heap)]()
-* [1337. The K Weakest Rows in a Matrix (max heap, nth_element + sort, binary search, buckets)]()]()
-* [856. Score of Parentheses (stack, recursion, strings, math)]()
-* [581. Shortest Unsorted Continuous Subarray (sort, stack, two pointers approach)]()
-* [645. Set Mismatch (sort, hash, int sign as visited mark, math, bit manipulation)]()
-* [160. Intersection of Two Linked Lists (int sign as visited mark, two pointers, hash)]()
-* [475. Heaters (binary search the answer, lower bound, two pointers)]()
-* [718. Maximum Length of Repeated Subarray (dp, binary search, rolling hash, sliding window)]()
-* [376. Wiggle Subsequence (dp, segment tree, greedy)]()
-* [1562. Find Latest Group of Size M (dsu, stl set upper_bound, propagate segment length to segment end points, sliding window, divide and conquer)]()
-* [923. 3Sum With Multiplicity (sort, two pointers, combinatorics, counting, dp)]()
-* [1526. Minimum Number of Increments on Subarrays to Form a Target Array (rmq, segment tree, two pointers, observation)]()
-* [1687. Delivering Boxes from Storage to Ports (DP, binary search, sliding window)]()
-* [850. Rectangle Area II (line sweep, coordinate compression, segment tree)]()
-* [391. Perfect Rectangle (line sweep, coordinate compression, xor, segment tree with lazy propagation)]()
-* [128. Longest Consecutive Sequence (dsu, memoization, hash table)]()
-* [1871. Jump Game VII (dp, queue, two pointers, difference arrays, segment tree)]()
-* [1856. Maximum Subarray Min-Product (sort + dsu, max heap, monotonic stack, recursion + segment tree + prefix sum) => similar to largest rectangle in histogram]()
-* [658. Find K Closest Elements (binary search, sliding window, heap, two pointers)]()
-* [926. Flip String to Monotone Increasing (dp, smart dp, prefix suffix)]()
-* [1349. Maximum Students Taking Exam (backtracking, memoization, graphs + greedy, bipartite matching, max flow)]()
-* [978. Longest Turbulent Subarray (sliding window, two pointers, dp)]()
-* [2002. Maximum Product of the Length of Two Palindromic Subsequences (bit manipulation, submask enumeration, dp, O(4^N) -> O(3^N) -> O(2^N))]()
-* [75. Sort Colors (count sort, two pointers, shift trick)]()
-* [1923. Longest Common Subpath (binary search the answer, rolling hash, suffix array + lcp with kasai's algorithm, sliding window, monodeque)](https://leetcode.com/problems/longest-common-subpath/)
-* [973. K Closest Points to Origin (sort, nth_element, heap, randomized quick select, binary search)](https://leetcode.com/problems/k-closest-points-to-origin/)
-* [1508. Range Sum of Sorted Subarray Sums (sort, nth_element, min heap, counter, binary search + sliding window)](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)
-* [84. Largest Rectangle in Histogram (monostack, segment tree, binary search, divide and conquer)](https://leetcode.com/problems/largest-rectangle-in-histogram/)
-* [135. Candy (greedy, sort, count sort, topological sort, left to right and right to left iterations)](https://leetcode.com/problems/candy/)
-
-## Very difficult problems
-* [1659. Maximize Grid Happiness]()
-* [312. Burst Balloons]()
-* [887. Super Egg Drop (memoization + binary search)]()
-* [546. Remove Boxes (dp, memoization)]()
-* [1787. Make the XOR of All Segments Equal to Zero (dp, bit manipulation, property of xor for sliding window)]()
-* [1815. Maximum Number of Groups Getting Fresh Donuts (greedy + dp, memoization, bit manipulation)]()
-* [1397. Find All Good Strings (string matching, dp on digits)]()
-* [1531. String Compression II (dp)](https://leetcode.com/problems/string-compression-ii/)
-
-## Nice problems
-* [910. Smallest Range II (prefix-suffix trick)]()
-* [1673. Find the Most Competitive Subsequence (heap, monoque)]()
-* [895. Maximum Frequency Stack (stacks)]()
-* [1157. Online Majority Element In Subarray (segment tree, binary search, Boyer–Moore majority vote algorithm)]()
-* [630. Course Schedule III (greedy + dp + max heap)]()
-* [777. Swap Adjacent in LR String (set of positions, three pointers, two pointers and prefix/suffix count)]()
-* [850. Rectangle Area II (line sweep, coordinate compression, segment tree)]()
-* [391. Perfect Rectangle (line sweep, coordinate compression, xor, segment tree with lazy propagation)]()
-* [932. Beautiful Array (divide and conquer)]()
-* [330. Patching Array (greedy, brain teaser)]()
-* [779. K-th Symbol in Grammar (recursion, brain teaser)]()
-* [834. Sum of Distances in Tree (2 dfs, euler tour, memoization)]()
-* [214. Shortest Palindrome (string matching, palindromes)]()
-* [1977. Number of Ways to Separate Numbers (dp, suffix array, lcp, smart <= compare of two substrings)]()
-
-## Nice people on LeetCode
-* https://leetcode.com/Bakerston/
-* https://leetcode.com/lzl124631x/
-* https://leetcode.com/DBabichev/
-* https://leetcode.com/rowe1227/
-* https://leetcode.com/lee215/
-* https://leetcode.com/votrubac/
-* https://leetcode.com/archit91/
-* https://leetcode.com/ye15/
-* https://leetcode.com/steiner/
-* https://leetcode.com/Roka/
-* https://leetcode.com/hobiter/
-* https://leetcode.com/karutz/
-* https://leetcode.com/rock/
-* https://leetcode.com/wangzi6147/
 
 ## Questions related to Time/Space complexity
 * [38. Count and Say: O(2^N) time? because the length at each step can grow twice (in worst case)?]()
