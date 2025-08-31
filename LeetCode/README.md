@@ -157,8 +157,17 @@ __*Select most frequent elements*__
 * [2856. Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
   * [Max Heap, O(NlogN)](https://leetcode.com/problems/minimum-array-length-after-pair-removals/submissions/1192983137/)
   * [Find most frequent element, O(N)](https://leetcode.com/problems/minimum-array-length-after-pair-removals/submissions/1193012678/)
-  
+* [1405. Longest Happy String](https://leetcode.com/problems/longest-happy-string/description/)
+  * [Greedy + Set](https://leetcode.com/problems/longest-happy-string/submissions/1424362704/)
+  * [Greedy + Sort](https://leetcode.com/problems/longest-happy-string/submissions/1424380336/)
+
 ### DP
+__*Knapsack DP*__
+* [2902. Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/description/)
+  * [Knapsack DP + Sliding Window + Counter, O(R * D)](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/submissions/1213834818/)
+* [3333. Find the Original Typed String II](https://leetcode.com/problems/find-the-original-typed-string-ii/description/)
+  * [Knapsack DP + Sliding Window, O(N + (K ^ 2))](https://leetcode.com/problems/find-the-original-typed-string-ii/submissions/1436349683/)
+
 __*Dominos & Covering/Tiling & DP*__
 * [790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/)
 
@@ -214,7 +223,10 @@ __*Eulerian Path (Hierholzer's Algorithm)*__
   * [Iterative DFS + STL list](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23332_ReconstructItinerary_sol5_eulerian_path_with_iterative_dfs_and_stl_list_O(LxTlogT)_time_O(LxT)_extra_space_24ms_15MB.cpp)
   * [Recursive DFS](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23332_ReconstructItinerary_sol6_eulerian_path_with_recursive_dfs_O(LxTlogT)_time_O(LxT)_extra_space_21ms_15MB.cpp)
   * [Iterative DFS](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%23332_ReconstructItinerary_sol7_eulerian_path_with_iterative_dfs_O(LxTlogT)_time_O(LxT)_extra_space_26ms_15MB.cpp)
-
+* [2097. Valid Arrangement of Pairs](https://leetcode.com/problems/valid-arrangement-of-pairs/)
+  * [Recursive DFS](https://leetcode.com/problems/valid-arrangement-of-pairs/submissions/1466651739/)
+  * [Iterative DFS](https://leetcode.com/problems/valid-arrangement-of-pairs/submissions/1466669012/)
+  
 ### Trees
 __*Morris Inorder Traversal*__
 * [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
@@ -277,6 +289,10 @@ __*Combinations with repetition*__
 __*Permutations with repetition*__
 * [1467. Probability of a Two Boxes Having The Same Number of Distinct Balls](https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/)
 
+__*Stirling numbers of the second kind*__
+* [3317. Find the Number of Possible Ways for an Event](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/description/)
+  * [Counting + Combinatorics + DP](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/submissions/1424739219/)
+
 __*Transformation matrices*__
 * [1680. Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)
   * [Leetcode submission](https://leetcode.com/submissions/detail/448688529/)
@@ -332,3 +348,7 @@ __*Warning (11-Dec-2023) for my old implementations of: Segment Tree with Lazy P
   * Possible bug in implementation of `propagate(node)`:
     * `if(2 * node < (int)lazy.size())` and `if(2 * node < (int)tree.size())` are bad;
 	* use `if(l != r)` instead (to check if the current node is a leaf, l and r represent the limits of the current range).
+	
+__*Warning (25-Dec-2024) for my old implementation of Sparse Table in the problem 2940*__
+  * [#2940_FindBuildingWhereAliceAndBobCanMeet_sol2_sparse_table_and_binary_search_O((Q+N)xlog(N))_time_O(NlogN)_extra_space_337ms_198MB.cpp](https://github.com/Tudor67/Competitive-Programming/blob/master/LeetCode/Problems/Algorithms/%232940_FindBuildingWhereAliceAndBobCanMeet_sol2_sparse_table_and_binary_search_O((Q%2BN)xlog(N))_time_O(NlogN)_extra_space_337ms_198MB.cpp)
+    * line 28: `for(int i = 0; i + pow2Of[k] < N; ++i){` should be changed to `for(int i = 0; i + pow2Of[k] - 1 < N; ++i){`;
