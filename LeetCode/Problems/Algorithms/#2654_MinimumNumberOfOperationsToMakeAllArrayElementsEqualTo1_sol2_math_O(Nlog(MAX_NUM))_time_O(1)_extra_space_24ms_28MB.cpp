@@ -1,3 +1,9 @@
+/*
+Wrong Answer
+TestCases:
+nums = [6,10,30,35,1001,77,143]
+nums = [10, 14, 14, 14, 21, 33]
+*/
 class Solution {
 private:
     const int INF = 1e9;
@@ -56,4 +62,5 @@ public:
 
         return (N - 1) + (minLen - 1);
     }
+
 };
