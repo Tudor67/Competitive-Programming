@@ -1,0 +1,75 @@
+class DSU{
+private:
+    vector<int> parent;
+    vector<int> size;
+
+public:
+    DSU(const int N){
+        size.assign(N, 1);
+        parent.assign(N, 1);
+        iota(parent.begin(), parent.end(), 0);
+    }
+
+    int find(int x){
+        if(parent[x] != x){
+            parent[x] = find(parent[x]);
+        }
+        return parent[x];
+    }
+
+    void join(int x, int y){
+        int xRoot = find(x);
+        int yRoot = find(y);
+        if(xRoot == yRoot){
+            return;
+        }
+        if(size[xRoot] > size[yRoot]){
+            swap(xRoot, yRoot);
+        }
+        parent[xRoot] = yRoot;
+        size[yRoot] += size[xRoot];
+    }
+};
+
+class Solution {
+public:
+    int minOperations(vector<int>& nums) {
+        const int N = nums.size();
+        const int MAX_NUM = *max_element(nums.begin(), nums.end());
+
+        vector<vector<int>> numToIndices(MAX_NUM + 1);
+        for(int i = 0; i < N; ++i){
+            numToIndices[nums[i]].push_back(i);
+        }
+
+        int totalOps = 0;
+        DSU dsu(N);
+        vector<bool> vis(N, false);
+
+        for(int currNum = MAX_NUM; currNum >= 1; --currNum){
+            const vector<int>& INDICES = numToIndices[currNum];
+
+            for(int i: INDICES){
+                if(i - 1 >= 0 && nums[i - 1] >= nums[i]){
+                    dsu.join(i - 1, i);
+                }
+                if(i + 1 < N && nums[i + 1] >= nums[i]){
+                    dsu.join(i + 1, i);
+                }
+            }
+
+            for(int i: INDICES){
+                if(!vis[dsu.find(i)]){
+                    vis[dsu.find(i)] = true;
+                    totalOps += 1;
+                }
+            }
+
+            for(int i: INDICES){
+                vis[dsu.find(i)] = false;
+            }
+        }
+
+        return totalOps;
+    }
+};
